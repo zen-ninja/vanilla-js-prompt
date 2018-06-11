@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>User Prompts</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="prompt-wrapper u-flex-h is-hidden">
+    <div class="prompt_content u-flex-v">
+      <div class="u-flex-v u-flex-1">
+        <div class="svg"></div>
+        <div class="msg"><h2></h2></div>
+        <div class="info"><p></p></div>
+      </div>
+      <div onclick="closePrompt()" class="btn bg-blue u-flex-h u-text-uppercase u-text-white">Got it</div>
+    </div>
+  </div>
+  <header>
+    <div class="icon">icon</div>
+    <nav>
+      <div class="item" onclick="promptUser('Stream Editors')">Editors</div>
+      <div class="item" onclick="promptUser('Future Targets')">Targets</div>
+      <div class="item" onclick="promptUser('Please note')">Note</div>
+      <div class="item" onclick="promptUser('Target updated!')">Target updated!</div>
+      <div class="item" onclick="promptUser('Task updated!')">Task updated!</div>
+      <div class="item" onclick="promptUser('Changes saved.')">Changes saved.</div>
+    </nav>
+  </header>
+  <section>
+    <h1>Some page content here</h1>
+  </section>
+  <script src="./index.js"></script>
+</body>
+</html>

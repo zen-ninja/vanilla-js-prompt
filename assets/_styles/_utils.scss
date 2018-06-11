@@ -1,0 +1,58 @@
+@import './_vars.scss';
+
+@mixin size($width, $height:$width) {
+  width: $width;
+  height: $height;
+}
+.u-flex-1 {
+  flex: 1;
+}
+.u-flex-v {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.u-flex-h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  padding: 1em 0;
+  width: 100%;
+}
+.bg-blue {
+  background-color: $color-blue;
+}
+.u-text-uppercase {
+  text-transform: uppercase;
+}
+.u-text-white {
+  color: white;
+}
+.is-hidden, .u-hidden {
+  display: none !important;
+}
+.svg {
+  @include size(1em);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  &.color-red {
+    fill: red;
+  }
+  &.icon-tick-circle {
+    background-image: url('./assets/img/icon-tick-circle.svg');
+  }
+  &.graphic-stream-editor {
+    background-image: url('./assets/img/graphic-stream-editor.svg');
+  }
+  &.graphic-future-targets {
+    background-image: url('./assets/img/graphic-future-targets.svg');
+  }
+  &.icon-exclamation-circle {
+    background-image: url('./assets/img/icon-exclamation-circle.svg');
+  }
+  &.icon-tick-circle {
+    background-image: url('./assets/img/icon-tick-circle.svg');
+  }
+}
